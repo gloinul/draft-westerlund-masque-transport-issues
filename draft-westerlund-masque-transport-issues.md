@@ -1,5 +1,5 @@
 ---
-docname: draft-westerlund-masque-transport-issues-00
+docname: draft-westerlund-masque-transport-issues-latest
 title: Transport Considerations for IP and UDP Proxying in MASQUE
 abbrev: Transport Considerations for MASQUE
 ipr: trust200902
