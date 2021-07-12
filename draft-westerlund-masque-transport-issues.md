@@ -44,9 +44,10 @@ normative:
    RFC2474:
    RFC3168:
    RFC8200:
-   I-D.schinazi-masque-connect-udp:
+   RFC9000:
+   I-D.ietf-masque-connect-udp:
    I-D.ietf-tsvwg-udp-options:
-   I-D.ietf-quic-transport:
+
 
 informative:
    RFC0793:
@@ -78,17 +79,17 @@ and provide solutions for these issues related to UDP and IP proxying.
 This document examines several aspects related to UDP {{RFC0768}} over IP
 {{RFC0791}} {{RFC8200}} (IP/UDP) flows when they are proxied according to the
 MASQUE proposal over QUIC and using HTTP CONNECT method for flow establishment
-(Connect-UDP) {{I-D.schinazi-masque-connect-udp}}. It also looks at how
+(Connect-UDP) {{I-D.ietf-masque-connect-udp}}. It also looks at how
 transport protocols on top of UDP use this information and contrast that with
 both the HTTP Connect method {{RFC7231}} using either TCP {{RFC0793}} or QUIC
-{{I-D.ietf-quic-transport}} as well as the methods used by the TURN protocol
+{{RFC9000}} as well as the methods used by the TURN protocol
 {{RFC8656}}.
 
 Aspects discussed include ECN {{RFC3168}}, Differentiated Services Field and its
 codepoint (DSCP) {{RFC2474}}, Fragmentation and MTU, ICMP {{RFC0792}}, IPv6 FLOW
 ID {{RFC8200}}, IPv6 Extension headers, and IPv4 Options {{RFC0791}}. This
 document also discusses the use of the UDP checksum and the UDP Length field
-usage related to UDP Options {{I-D.ietf-quic-transport}}.
+usage related to UDP Options {{I-D.ietf-tsvwg-udp-options}}.
 
 ## Definitions
 
